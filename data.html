@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+ src="https://code.jquery.com/jquery-3.2.1.min.js"
+ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+ crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="models.html">Machine Learning Overview</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="Congressional Votes Logistic Regression.html">Logistic Regression</a></li>
+            <li><a href="Congressional Votes KNN.html">KNN Nearest Neighbor</a></li>
+            <li><a href="Congressional Votes Random Forest.html">Random Forest</a></li>
+            <li><a href="Congressional Votes SVM.html">Support Vector Machine</a></li>
+            <li><a href="Congressional Votes Neural Networks.html">Neural Networks</a></li>
+            <li><a href="Vote_Graph.html">Vote Totals Graph</a></li>
+            <li><a href="Party_Vote_Graph">Vote Totals by Party</a></li>
+            <li><a href="Congressional Votes Analysis.html">Data Analysis</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Conclusion.html">Conclusion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+      <div class="col-md-9">
+       <h1>Overview of the Dataset</h1>
+       <p> The data that the machine learning models were used on came from the Congressional records data set from the University of California Irvine machine learning repository. The data set itself was compiled from the <cite>Congressional Quarterly Almanac, 98th Congress, 2nd session 1984, Volume XL: Congressional Quarterly Inc. Washington, D.C., 1985.</cite></p>
+       <h3>Data Set information</h3>
+      <blockquote>This data set includes votes for each of the U.S. House of Representatives Congressmen on the 16 key votes identified by the CQA. The CQA lists nine different types of votes: voted for, paired for, and announced for (these three simplified to yea), voted against, paired against, and announced against (these three simplified to nay), voted present, voted present to avoid conflict of interest, and did not vote or otherwise make a position known (these three simplified to an unknown disposition).</blockquote>
+      <h3>Attributes</h3>
+    <ol>
+ 	  <li>Class Name: 2 (democrat, republican)</li>
+	  <li>Disabled Infants: 2 (y,n)</li>
+	  <li>Water Project Cost Sharing: 2 (y,n)</li>
+      <li>Adoption of the Budget Resolution: 2 (y,n)</li>
+      <li>Physician Fee Freeze: 2 (y,n)</li>
+      <li>El Salvador Aid: 2 (y,n)</li>
+      <li>Religious Groups in Schools: 2 (y,n)</li>
+      <li>Anti Satellite Test Van: 2 (y,n)</li>
+      <li>Aid to Nicaraguan Contras: 2 (y,n)</li>
+      <li>MX Missile: 2 (y,n)</li>
+      <li>Immigration: 2 (y,n)</li>
+      <li>Synfuels Corporation Cutback: 2 (y,n)</li>
+      <li>Education Spending: 2 (y,n)</li>
+      <li>Superfund Right to Sue: 2 (y,n)
+      <li>Crime: 2 (y,n)</li>
+      <li>duty-free-exports: 2 (y,n)</li>
+	  <li>export-administration-act-south-africa: 2 (y,n)</li>
+    </ol>
+    <h3>Political Parties</h3>
+    <img src="Political_Party.png" width="1000px" height="auto">
+    <h3>Vote Totals</h3>
+    <img src="Votes.png" width="1000px" height="auto" >
+    <h3>Votes by Party</h3>
+    <img src="Votes_by_Party.png" width="1000px" height="auto">
+    <p>Dua, D. and Karra Taniskidou, E. (2017). UCI Machine Learning Repository <a href="http://archive.ics.uci.edu/ml"></a>. Irvine, CA: University of California, School of Information and Computer Science</p>  
+   </div>
+    <div class="col-md-3 sidebar">
+         <ul>
+           <li><a href="models.html">Machine Learning Overview</a></li>
+           <li><a href="data.html">Data</a></li>
+           <li><a href="Congressional Votes Logistic Regression.html">Logistic Regression<</a></li>
+           <li><a href="Congressional Votes KNN.html">KNN Nearest Neighbor</a></li>
+           <li><a href="Congressional Votes Random Forest.html">Random Forest</a></li>
+           <li><a href="Congressional Votes SVM.html">Support Vector Machine</a></li>
+           <li><a href="Congressional Votes Neural Networks.html">Neural Networks</a></li>
+           <li><a href="Vote_Graph.html">Vote Totals Graph</a></li>
+           <li><a href="Party_Vote_Graph.html">Vote Totals by Party</a></li>
+           <li><a href="Conclusion.html">Conclusion</a></li>
+         </ul>   
+       </div> 
+     </div>  
+  </div>  
+</body>	
+</html>

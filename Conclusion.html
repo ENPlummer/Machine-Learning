@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+ src="https://code.jquery.com/jquery-3.2.1.min.js"
+ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+ crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="Index.html">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="models.html">Machine Learning Overview</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="Congressional Votes Logistic Regression.html">Logistic Regression</a></li>
+            <li><a href="Congressional Votes KNN.html">KNN Nearest Neighbor</a></li>
+            <li><a href="Congressional Votes Random Forest.html">Random Forest</a></li>
+            <li><a href="Congressional Votes SVM.html">Support Vector Machine</a></li>
+            <li><a href="Congressional Votes Neural Networks.html">Neural Networks</a></li>
+            <li><a href="Vote_Graph.html">Vote Totals Graph</a></li>
+            <li><a href="Party_Vote_Graph">Vote Totals by Party</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Conclusion.html">Conclusion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="Container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Conclusion</h1>
+      <p>Since The Support Vector Machine and the Logistic Regression models produced scores of 1.0 both models are out of consideration for the best performing model. A score of 1.0 means that the model is working pefectly which is highly unlikely and is suspect. The 1.0 scores occured most liekly due to an error in creating the models.</p>
+
+      <p>With the Support Vector Machine and Logistic Regression models being out of consideration, the best performing model was the deep learning neural network model with a score of 0.9633. The worst perfoming model was the normal neural network model with an accuracy rate of 0.9083.</p>
+
+      <p>In is very important that your data fits the model. The classification models don't work with continuous data set. A categorical data is needed for classfication models. For continous data sets the regression version of the models have to be used.</p>
+
+      <h3>Issues</h3>
+      <p>A major issue was that the Support Vector Machine and the Logistic Regression models produced accuracy rates of 100% which indicates that errors were made in creating the model. A score of 1.0 accuracy are always suspect.</p>
+      <p>The data set consisted of categorical data and preprocessing had to be done in order to be able to use the models.</p>
+
+      <h3>Next Steps</h3>
+      <p>Figure out if the 1.0 scores for the Support Vector Machine and Logistic Regression models were legimate or not. If not find out what the error was and correct it.
+      <p>Create a data set based the original 98th Congress data set for the 115th Congress, and compare the results between the two groups</p>
+      <p>Imporved the design and the user interface of this website. I would be great if users could try out the models themselves.</p>
+      
+    </div>
+    <div class="col-md-4"></div>
+      <ul>
+        <li><a href="models.html">Machine Learning Overview</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="Congressional Votes Logistic Regression.html">Logistic Regression<</a></li>
+        <li><a href="Congressional Votes KNN.html">KNN Nearest Neighbor</a></li>
+        <li><a href="Congressional Votes Random Forest.html">Random Forest</a></li>
+        <li><a href="Congressional Votes SVM.html">Support Vector Machine</a></li>
+        <li><a href="Congressional Votes Neural Networks.html">Neural Networks</a></li>
+        <li><a href="Vote_Graph.html">Vote Totals Graph</a></li>
+        <li><a href="Party_Vote_Graph.html">Vote Totals by Party</a></li>
+        <li><a href="Conclusion.html">Conclusion</a></li>
+      </ul>   
+  </div>
+</div>
